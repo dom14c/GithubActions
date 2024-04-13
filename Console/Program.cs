@@ -82,6 +82,7 @@ namespace GithubActionsLab
         }
 
         // Implement this method following a similar pattern as above
+        // ignore
         public static double Power(string x, string y)
         {
             return Math.Pow(double.Parse(x), double.Parse(y));
