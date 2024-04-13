@@ -52,9 +52,9 @@ namespace GithubActionsLab
         [Test]
         public void Subtract_Null()
         {
-            Assert.Throws<Subtract_InvalidNullReferenceException>(() => Program.Subtract("1",null));
-            Assert.Throws<Subtract_InvalidNullReferenceException>(() => Program.Subtract(null,"1"));
-            Assert.Throws<Subtract_InvalidNullReferenceException>(() => Program.Subtract(null,null));
+            Assert.Throws<ArgumentNullException>(() => Program.Subtract("1",null));
+            Assert.Throws<ArgumentNullException>(() => Program.Subtract(null,"1"));
+            Assert.Throws<ArgumentNullException>(() => Program.Subtract(null,null));
         }
 
         //Test for multiplication
@@ -77,9 +77,9 @@ namespace GithubActionsLab
         [Test]
         public void Multiply_Null()
         {
-            Assert.Throws<Multiply_InvalidNullReferenceException>(() => Program.Multiply("1",null));
-            Assert.Throws<Multiply_InvalidNullReferenceException>(() => Program.Multiply(null,"1"));
-            Assert.Throws<Multiply_InvalidNullReferenceException>(() => Program.Multiply(null,null));
+            Assert.Throws<ArgumentNullException>(() => Program.Multiply("1",null));
+            Assert.Throws<ArgumentNullException>(() => Program.Multiply(null,"1"));
+            Assert.Throws<ArgumentNullException>(() => Program.Multiply(null,null));
         }
 
         //Test for division
@@ -102,9 +102,9 @@ namespace GithubActionsLab
         [Test]
         public void Divide_Null()
         {
-            Assert.Throws<Divide_InvalidNullReferenceException>(() => Program.Divide("1",null));
-            Assert.Throws<Divide_InvalidNullReferenceException>(() => Program.Divide(null,"1"));
-            Assert.Throws<Divide_InvalidNullReferenceException>(() => Program.Divide(null,null));
+            Assert.Throws<ArgumentNullException>(() => Program.Divide("1",null));
+            Assert.Throws<ArgumentNullException>(() => Program.Divide(null,"1"));
+            Assert.Throws<ArgumentNullException>(() => Program.Divide(null,null));
         }
     }
 }
